@@ -1,0 +1,2 @@
+# GL_AndroidRuntimePermission
+Android运行时权限Demo
