@@ -85,6 +85,7 @@ public class AndPermission2Activity extends BaseActivty {
                 // 2，申请了用户拒绝了，那你就要提示用户了，所以返回true；
                 // 3，用户选择了拒绝并且不再提示，那你也不要申请了，也不要提示用户了，所以返回false；
                 // 4，已经允许了，不需要申请也不需要提示，所以返回false；
+
                 if (ContextCompat.checkSelfPermission(AndPermission2Activity.this, Manifest.permission.SEND_SMS) != PackageManager.PERMISSION_GRANTED) {
                     //没有权限
                     ActivityCompat.requestPermissions(AndPermission2Activity.this, new String[]{Manifest.permission.SEND_SMS}, 1);
